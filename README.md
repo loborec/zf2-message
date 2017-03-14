@@ -46,7 +46,7 @@ $compose->text='Today is a nice day';
 //you can also use only html part
 
 //if you use htm2 parameter, and text part will be automatically converted from html part:
-//$compose->html2='<b>Today is a nice day'</b>'; 
+//$compose->html2='<b>Today is a nice day'</b>';  
 
 //you can add array of attachments, and MIME type will be automatically changed to 'multipart/related'
 /*
@@ -76,3 +76,6 @@ $transport = new Zend\Mail\Transport\Sendmail();
 $transport->send($message); 
             
 ```
+
+## Notice
+In Signer.php I am using one constant APP_LIBRARY which points to VENDOR directory.
